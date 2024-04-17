@@ -20,10 +20,10 @@ function ingresarSouvenir() {
 }
 
 // Lista de souvenirs
-let souvenirs = [];
+var souvenirs = [];
 
 // Preguntar al usuario si desa ingresar nuevos souvenirs
-const continuarIngresando = true;
+let continuarIngresando = true;
 while (continuarIngresando) {
     let souvenir = ingresarSouvenir();
     if (souvenir !== null) {
