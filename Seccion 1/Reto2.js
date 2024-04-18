@@ -20,15 +20,13 @@ function ingresarSouvenir() {
 }
 
 // Lista de souvenirs
-var souvenirs = [];
+const souvenirs = [];
 
-// Preguntar al usuario si desa ingresar nuevos souvenirs
+//Preguntar al usuario si desa ingresar nuevos souvenirs
 let continuarIngresando = true;
 while (continuarIngresando) {
     let souvenir = ingresarSouvenir();
-    if (souvenir !== null) {
         souvenirs.push(souvenir);
-    }
     continuarIngresando = confirm("¿Desea ingresar otro souvenir?");
 }
 
