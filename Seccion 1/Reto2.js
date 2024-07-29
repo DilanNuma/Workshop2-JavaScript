@@ -19,6 +19,19 @@ function ingresarSouvenir() {
     };
 }
 
+// Función para verificar los tipos de datos
+function verificarTipoDatos(souvenir) {
+    if (typeof souvenir.nombre !== 'string') {
+        console.log("Error: El nombre del souvenir debe ser una cadena de texto.");
+    }
+    if (typeof souvenir.costo !== 'number' || isNaN(souvenir.costo)) {
+        console.log("Error: El costo del souvenir debe ser un número válido.");
+    }
+    if (typeof souvenir.disponible !== 'boolean') {
+        console.log("Error: La disponibilidad del souvenir debe ser un valor booleano.");
+    }
+}
+
 // Lista de souvenirs
 const souvenirs = [];
 
